@@ -1,20 +1,20 @@
 <p align="center">
-  <a href="https://cara.lekoarts.de">
+  <a href="https://emilia.lekoarts.de">
     <img alt="LekoArts" src="https://img.lekoarts.de/gatsby/gatsby-site-illustration.png" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby Starter Portfolio: Cara
+  Gatsby Starter Portfolio: Emilia
 </h1>
 
 <p align="center">
-  <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/license-0BSD-blue.svg" alt="Gatsby Starter Portfolio: Cara is released under the 0BSD license." />
+  <a href="https://github.com/LekoArts/gatsby-starter-portfolio-emilia/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/license-0BSD-blue.svg" alt="Gatsby Starter Portfolio: Emilia is released under the 0BSD license." />
   </a>
   <a href="https://github.com/sponsors/LekoArts">
     <img alt="GitHub Sponsors" src="https://img.shields.io/github/sponsors/LekoArts">
   </a>
-  <a href="https://www.lekoarts.de?utm_source=cara&utm_medium=Starter">
+  <a href="https://www.lekoarts.de?utm_source=emilia&utm_medium=Starter">
     <img alt="Website" src="https://img.shields.io/badge/-website-blue">
   </a>
   <a href="https://twitter.com/intent/follow?screen_name=lekoarts_de">
@@ -22,28 +22,32 @@
   </a>
 </p>
 
-Playful and Colorful One-Page portfolio featuring Parallax effects and animations. Using the Gatsby Theme [`@lekoarts/gatsby-theme-cara`](https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-cara).
+Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Using the Gatsby Theme [`@lekoarts/gatsby-theme-emilia`](https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-emilia).
 
-[**Demo Website**](https://cara.lekoarts.de)
+[**Demo Website**](https://emilia.lekoarts.de)
 
-Also be sure to check out other [Free & Open Source Gatsby Themes](https://themes.lekoarts.de) and my [Personal Website](https://www.lekoarts.de?utm_source=cara&utm_medium=Starter).
+Also be sure to check out other [Free & Open Source Gatsby Themes](https://themes.lekoarts.de) and my [Personal Website](https://www.lekoarts.de?utm_source=emilia&utm_medium=Starter).
 
 ## ✨ Features
 
-- Theme UI-based theming
-- react-spring Parallax Effect
-- CSS Animations on Shapes
+- MDX
+- Fully customizable through the usage of Gatsby Themes (and Theme UI)
+- Light Mode / Dark Mode
+- Page Transitions
+- Masonry grid and focus on big images
+- SEO (Sitemap, OpenGraph tags, Twitter tags)
+- WebApp Manifest
 
 ## 🚀 Getting Started
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/LekoArts/gatsby-starter-portfolio-cara)
+[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/LekoArts/gatsby-starter-portfolio-emilia)
 
 ### 1. **Create a Gatsby site.**
 
 Use `git` to clone the site and navigate into it:
 
 ```sh
-git clone https://github.com/LekoArts/gatsby-starter-portfolio-cara project-name
+git clone https://github.com/LekoArts/gatsby-starter-portfolio-emilia project-name
 cd project-name
 ```
 
@@ -67,23 +71,46 @@ If you want to learn more about how you can use a Gatsby starter that is configu
 
 **Important Note:** Please read the guide [Shadowing in Gatsby Themes](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/shadowing/) to understand how to customize the underlying theme!
 
-This starter creates a new Gatsby site that installs and configures the theme [`@lekoarts/gatsby-theme-cara`](https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-cara).
+This starter creates a new Gatsby site that installs and configures the theme [`@lekoarts/gatsby-theme-emilia`](https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-emilia).
 
-Have a look at the theme's README and files to see what options are available and how you can shadow the various components including Theme UI. Generally speaking you will want to place your files into `src/@lekoarts/gatsby-theme-cara/` to shadow/override files. The Theme UI config can be configured by shadowing its files in `src/gatsby-plugin-theme-ui/`.
+Have a look at the theme's README and files to see what options are available and how you can shadow the various components including Theme UI. Generally speaking you will want to place your files into `src/@lekoarts/gatsby-theme-emilia/` to shadow/override files. The Theme UI config can be configured by shadowing its files in `src/gatsby-plugin-theme-ui/`.
 
-### Changing content
+### Adding a new project
 
-The content of this project is defined in four `.mdx` files inside the theme's `sections` folder. You can override the files `intro.mdx`, `projects.mdx`, `about.mdx` and `contact.mdx`. This starter has overridden all files for you already.
+New projects will be shown on the index page of this theme and can be added by creating MDX files inside `content/projects`. General setup:
 
-You have to use the `<ProjectCard />` component inside `projects.mdx` to display the cards. Example:
+1. Create a new folder inside `content/projects`
+1. Create a new `index.mdx` file, and add the frontmatter
+1. Add images to the created folder (from step 1)
+1. Reference your desired images as your `cover` in the frontmatter
+1. Write your content below the frontmatter (optional)
+1. Use `defer` to opt-in into Deferred Static Generation (DSG) (optional)
+1. Add a `slug` to the frontmatter to use a custom slug, e.g. `slug: "/my-slug"` (Optional)
+
+**Frontmatter reference:**
 
 ```md
-## Projects
-
-<ProjectCard title="Freiheit" link="https://www.behance.net/gallery/58937147/Freiheit" bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)">
-This project is my entry to Adobe's #ChallengeYourPerspective contest.
-</ProjectCard>
+---
+cover: "./sean-foley-0JD7kvxAq0Y-unsplash.jpg"
+date: "2019-09-10"
+title: "Emilia"
+defer: false
+slug: "/my-slug"
+areas:
+  - Neon
+  - Lights
+---
 ```
+
+The frontmatter alone is enough, if you'd like to add additional content you can do so by writing your content (as usual with MDX) below the frontmatter. It'll be displayed in the header of the project below the date and areas.
+
+### Changing the "About Me" text
+
+Create a file at `src/@lekoarts/gatsby-theme-emilia/texts/about-me.mdx` to edit the text.
+
+### Changing the avatar
+
+Place an image with the name `avatar` inside the folder `content/assets` (or your custom `assetsPath` which you defined for the theme).
 
 ### Change your `static` folder
 

@@ -6,33 +6,34 @@ module.exports = {
   siteMetadata: {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
-    // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitle: `Cara`,
-    siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
-    siteHeadline: `Cara - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://cara.lekoarts.de`,
-    siteDescription: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+    // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-emilia-core/gatsby-config.js
+    siteTitle: `Emilia`,
+    siteTitleAlt: `Emilia - Gatsby Starter Portfolio`,
+    siteHeadline: `Emilia - Gatsby Theme from @lekoarts`,
+    siteUrl: `https://emilia.lekoarts.de`,
+    siteDescription: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
     author: `@lekoarts_de`,
   },
   plugins: [
     {
-      resolve: `@lekoarts/gatsby-theme-cara`,
+      resolve: `@lekoarts/gatsby-theme-emilia`,
       // See the theme's README for all available options
       options: {},
     },
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cara - @lekoarts/gatsby-theme-cara`,
-        short_name: `Cara`,
-        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+        name: `Emilia - @lekoarts/gatsby-theme-emilia`,
+        short_name: `Emilia`,
+        description: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI.`,
         start_url: `/`,
-        background_color: `#141821`,
+        background_color: `#fff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#f6ad55`,
+        // theme_color: `#3182ce`,
         display: `standalone`,
         icons: [
           {
