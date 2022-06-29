@@ -20,7 +20,20 @@ module.exports = {
     {
       resolve: `@lekoarts/gatsby-theme-emilia`,
       // See the theme's README for all available options
-      options: {},
+      options: {
+        name: "Thao Doan",
+        location: 'Ireland',
+        socialMedia: [
+          {
+            title: 'LinkedIn',
+            href: 'https://www.linkedin.com/in/thao-ngo-phuong-doan-a6944643/',
+          },
+          {
+            title: 'Instagram',
+            href: 'https://www.instagram.com/cheryl_thaodoan/'
+          }
+        ]
+      },
     },
     `gatsby-plugin-sitemap`,
     {

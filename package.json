@@ -8,7 +8,7 @@
   "starter-name": "gatsby-starter-portfolio-emilia",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop --host 172.18.95.133",
     "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
     "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
     "start": "gatsby develop",
@@ -17,13 +17,30 @@
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-emilia": "^3.0.0",
+    "boolbase": "^1.0.0",
+    "color-name": "^1.1.4",
+    "decamelize": "^6.0.0",
+    "decode-uri-component": "^0.2.0",
     "gatsby": "^4.12.1",
     "gatsby-plugin-gatsby-cloud": "^4.12.1",
     "gatsby-plugin-manifest": "^4.12.1",
     "gatsby-plugin-sitemap": "^5.12.1",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.27",
+    "has-flag": "^5.0.1",
+    "import-lazy": "^4.0.0",
+    "imurmurhash": "^0.1.4",
+    "is-extglob": "^2.1.1",
+    "is-typedarray": "^1.0.0",
+    "isexe": "^2.0.0",
+    "once": "^1.4.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "require-directory": "^2.1.1",
+    "requires-port": "^1.0.0",
+    "strip-eof": "^2.0.0",
+    "utila": "^0.5.0-dev.1",
+    "whatwg-url": "^11.0.0",
+    "which-module": "^2.0.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3"
