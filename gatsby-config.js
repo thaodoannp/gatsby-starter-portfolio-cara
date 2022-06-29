@@ -21,6 +21,7 @@ module.exports = {
       resolve: `@lekoarts/gatsby-theme-emilia`,
       // See the theme's README for all available options
       options: {
+        mdx: false,
         name: "Thao Doan",
         location: 'Ireland',
         socialMedia: [
@@ -33,6 +34,20 @@ module.exports = {
             href: 'https://www.instagram.com/cheryl_thaodoan/'
           }
         ]
+      },
+    },
+    `gatsby-remark-images`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
       },
     },
     `gatsby-plugin-sitemap`,
