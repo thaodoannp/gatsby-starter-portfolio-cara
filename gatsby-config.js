@@ -22,6 +22,7 @@ module.exports = {
       // See the theme's README for all available options
       options: {
         mdx: false,
+        showThemeAuthor: false,
         name: "Thao Doan",
         location: 'Ireland',
         socialMedia: [
