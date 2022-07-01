@@ -8,7 +8,7 @@
   "starter-name": "gatsby-starter-portfolio-emilia",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop --host 172.18.95.133",
+    "develop": "gatsby develop",
     "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
     "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
     "start": "gatsby develop",
@@ -27,6 +27,7 @@
     "gatsby-plugin-sharp": "^4.17.0",
     "gatsby-plugin-sitemap": "^5.12.1",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.27",
+    "gatsby-remark-embed-video": "^3.2.1",
     "gatsby-remark-images": "^6.17.0",
     "has-flag": "^5.0.1",
     "import-lazy": "^4.0.0",
@@ -42,8 +43,7 @@
     "strip-eof": "^2.0.0",
     "utila": "^0.5.0-dev.1",
     "whatwg-url": "^11.0.0",
-    "which-module": "^2.0.0",
-    "gatsby-remark-images": "^6.17.0"
+    "which-module": "^2.0.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3"
