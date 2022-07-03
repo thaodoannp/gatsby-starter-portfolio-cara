@@ -22,6 +22,7 @@ module.exports = {
       // See the theme's README for all available options
       options: {
         mdx: false,
+        formatString: 'DD MMM, YYYY',
         showThemeAuthor: false,
         name: "Thao Doan",
         location: 'Ireland',
@@ -33,6 +34,10 @@ module.exports = {
           {
             title: 'Instagram',
             href: 'https://www.instagram.com/cheryl_thaodoan/'
+          },
+          {
+            title: 'Youtube',
+            href: 'https://www.youtube.com/channel/UCKANqzt7rYgJqXfLhXko7kw'
           }
         ]
       },
